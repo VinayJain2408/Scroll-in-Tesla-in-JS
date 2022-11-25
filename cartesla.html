@@ -140,9 +140,17 @@
                 icon.style.display='none'
             }
         }
-        icon.onclick= ()=>{
-            window.scrollTo(0,0)
-        }
+        // icon.onclick= ()=>{
+        //     window.scrollTo(0,0)
+        // }
+
+        icon.onclick = ()=>{
+                window.scroll({
+                    top:0,
+                    left:0,
+                    behavior:"smooth"
+                })
+            }
     </script>
 
 </body>
